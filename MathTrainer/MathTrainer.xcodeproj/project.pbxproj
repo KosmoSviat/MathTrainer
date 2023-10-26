@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		641671C22AE9696700C42532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641671C12AE9696700C42532 /* AppDelegate.swift */; };
 		641671C42AE9696700C42532 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641671C32AE9696700C42532 /* SceneDelegate.swift */; };
-		641671C62AE9696700C42532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641671C52AE9696700C42532 /* ViewController.swift */; };
+		641671C62AE9696700C42532 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641671C52AE9696700C42532 /* GeneralViewController.swift */; };
 		641671C92AE9696700C42532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641671C72AE9696700C42532 /* Main.storyboard */; };
 		641671CB2AE9696800C42532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 641671CA2AE9696800C42532 /* Assets.xcassets */; };
 		641671CE2AE9696800C42532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641671CC2AE9696800C42532 /* LaunchScreen.storyboard */; };
+		643B7D612AEB012D0082CDF3 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B7D602AEB012D0082CDF3 /* TrainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		641671BE2AE9696700C42532 /* MathTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		641671C12AE9696700C42532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		641671C32AE9696700C42532 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		641671C52AE9696700C42532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		641671C52AE9696700C42532 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		641671C82AE9696700C42532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		641671CA2AE9696800C42532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		641671CD2AE9696800C42532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		641671CF2AE9696800C42532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643B7D602AEB012D0082CDF3 /* TrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,64 @@
 		641671C02AE9696700C42532 /* MathTrainer */ = {
 			isa = PBXGroup;
 			children = (
-				641671C12AE9696700C42532 /* AppDelegate.swift */,
-				641671C32AE9696700C42532 /* SceneDelegate.swift */,
-				641671C52AE9696700C42532 /* ViewController.swift */,
-				641671C72AE9696700C42532 /* Main.storyboard */,
-				641671CA2AE9696800C42532 /* Assets.xcassets */,
-				641671CC2AE9696800C42532 /* LaunchScreen.storyboard */,
-				641671CF2AE9696800C42532 /* Info.plist */,
+				643B7D5A2AEAFF860082CDF3 /* Application */,
+				643B7D5C2AEB002D0082CDF3 /* General */,
+				643B7D5F2AEB010C0082CDF3 /* Train */,
+				643B7D5B2AEAFF8E0082CDF3 /* Resources */,
 			);
 			path = MathTrainer;
+			sourceTree = "<group>";
+		};
+		643B7D5A2AEAFF860082CDF3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				641671C12AE9696700C42532 /* AppDelegate.swift */,
+				641671C32AE9696700C42532 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		643B7D5B2AEAFF8E0082CDF3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				641671CC2AE9696800C42532 /* LaunchScreen.storyboard */,
+				641671CA2AE9696800C42532 /* Assets.xcassets */,
+				641671CF2AE9696800C42532 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		643B7D5C2AEB002D0082CDF3 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				643B7D5E2AEB003B0082CDF3 /* View */,
+				643B7D5D2AEB00350082CDF3 /* Controller */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		643B7D5D2AEB00350082CDF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				641671C52AE9696700C42532 /* GeneralViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		643B7D5E2AEB003B0082CDF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				641671C72AE9696700C42532 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		643B7D5F2AEB010C0082CDF3 /* Train */ = {
+			isa = PBXGroup;
+			children = (
+				643B7D602AEB012D0082CDF3 /* TrainViewController.swift */,
+			);
+			path = Train;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				641671C62AE9696700C42532 /* ViewController.swift in Sources */,
+				641671C62AE9696700C42532 /* GeneralViewController.swift in Sources */,
+				643B7D612AEB012D0082CDF3 /* TrainViewController.swift in Sources */,
 				641671C22AE9696700C42532 /* AppDelegate.swift in Sources */,
 				641671C42AE9696700C42532 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,7 +346,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MQAY62GC84;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MathTrainer/Info.plist;
+				INFOPLIST_FILE = MathTrainer/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MathTrainer;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -329,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MQAY62GC84;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MathTrainer/Info.plist;
+				INFOPLIST_FILE = MathTrainer/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MathTrainer;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
