@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MathTrainer
 //
-//  Created by Sviatoslav Samoilov on 25.10.2023.
+//  Created by Sviatoslav Samoilov on 11.07.2023.
 //
 
 import UIKit
